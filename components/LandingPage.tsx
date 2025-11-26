@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { ArrowRight, Star, Clock, Activity, Zap, ChevronDown, Facebook, Twitter, Instagram, Linkedin, Github } from 'lucide-react';
+import { ArrowRight, Star, Activity, Zap, ChevronDown, Instagram, Linkedin, Github } from 'lucide-react';
 
 interface Props {
   onEnterApp: () => void;
