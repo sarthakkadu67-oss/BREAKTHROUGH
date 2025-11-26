@@ -1,7 +1,7 @@
 
 import React, { useState, useMemo } from 'react';
-import { X, Star, Clock, MapPin, Send, User, Loader2, Search, Plus, Minus, ShoppingBag, Heart, Activity, MessageSquare, CheckCircle } from 'lucide-react';
-import { Restaurant, MenuItem } from '../types';
+import { X, Star, Clock, Send, Loader2, Search, Plus, Minus, ShoppingBag, Activity, MessageSquare, CheckCircle } from 'lucide-react';
+import { Restaurant } from '../types';
 import { api } from '../services/mockBackend';
 
 interface Props {
