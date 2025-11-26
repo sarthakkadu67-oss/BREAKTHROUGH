@@ -210,7 +210,7 @@ const App: React.FC = () => {
 
   const cartTotalAmount = cartItemsData.reduce((acc, item) => acc + (item.price * item.quantity), 0);
 
-  const onPlaceOrder = async (address: string, paymentMethod: string) => {
+  const onPlaceOrder = async (address: string) => {
     if (!cart.restaurantId) return;
     await api.placeOrder(cart.restaurantId, cartItemsData, cartTotalAmount, address);
     setCart({ restaurantId: null, items: {} }); // Clear Cart
