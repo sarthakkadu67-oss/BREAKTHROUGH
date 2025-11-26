@@ -191,3 +191,4 @@ export const CheckoutModal: React.FC<Props> = ({ restaurantName, items, totalAmo
     </div>
   );
 };
+
