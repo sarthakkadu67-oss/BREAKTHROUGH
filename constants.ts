@@ -1,5 +1,5 @@
 
-import { Restaurant, MenuItem } from './types';
+import { Restaurant } from './types';
 
 export const CATEGORIES = [
   { id: 0, name: 'Combos', image: 'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&q=80' },
@@ -14,3 +14,4 @@ export const CATEGORIES = [
 ];
 
 export const RESTAURANTS: Restaurant[] = []; // Static data is replaced by generator.
+
