@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import { X, Package, User, MapPin, Clock, LogOut, ChevronRight, ShoppingBag } from 'lucide-react';
+import { X, Package, User, MapPin, LogOut, ShoppingBag, Clock } from 'lucide-react';
 import { UserProfile, Order } from '../types';
 import { api } from '../services/mockBackend';
 
