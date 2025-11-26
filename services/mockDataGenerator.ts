@@ -42,7 +42,7 @@ const MENU_ITEMS_DB = [
 ];
 
 const generateReviews = (count: number): Review[] => {
-  return Array.from({ length: count }).map((_, i) => ({
+  return Array.from({ length: count }).map(() => ({
     id: `rev-${Math.random()}`,
     userName: `User ${Math.floor(Math.random() * 1000)}`,
     rating: Math.floor(Math.random() * 2) + 4, // 4 or 5 stars mostly
@@ -51,7 +51,7 @@ const generateReviews = (count: number): Review[] => {
   }));
 };
 
-const generateMenu = (cuisineType: string): MenuItem[] => {
+const generateMenu = (): MenuItem[] => {
   const items: MenuItem[] = [];
 
   // Guaranteed Combos: Add 1 or 2 combo items to every restaurant to ensure the tab appears
@@ -124,7 +124,7 @@ export const generateMockRestaurants = (count: number = 100): Restaurant[] => {
       isVeg: isVeg,
       healthScore: Math.floor(Math.random() * (100 - 60) + 60),
       reviews: generateReviews(3),
-      menu: generateMenu(mainCuisine)
+      menu: generateMenu()
     };
   });
 };
