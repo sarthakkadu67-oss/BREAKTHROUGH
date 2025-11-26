@@ -1,6 +1,6 @@
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Filter, ChevronDown, X, Check, ArrowUpDown, Zap } from 'lucide-react';
+import { ChevronDown, X, Check, ArrowUpDown, Zap } from 'lucide-react';
 import { FilterState, SortOption } from '../types';
 
 interface Props {
